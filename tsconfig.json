@@ -1,0 +1,44 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["es2017", "esnext.asynciterable"],
+    "typeRoots": ["node_modules/@types"],
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "pretty": true,
+    "sourceMap": true,
+    "declaration": true,
+    "outDir": "dist",
+    "allowJs": true,
+    "noEmit": false,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "importHelpers": true,
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["*"],
+      "@config": ["config"],
+      "@database": ["database"],
+      "@controllers/*": ["controllers/*"],
+      "@templates": ["templates"],
+      "@enums/*": ["enums/*"],
+      "@templates/*": ["templates/*"],
+      "@interfaces/*": ["interfaces/*"],
+      "@middlewares": ["middlewares"],
+      "@routes": ["routes"],
+      "@services/*": ["services/*"],
+      "@exceptions/*": ["exceptions/*"],
+      "@utils/*": ["utils/*"],
+      "@helpers/*": ["helpers/*"]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "src/app.ts"
+, "types/env.d.ts"  ]
+}
